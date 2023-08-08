@@ -13,12 +13,12 @@
 		17FB71242A8196C60062D7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FB71222A8196C60062D7FA /* Main.storyboard */; };
 		17FB71262A8196C70062D7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17FB71252A8196C70062D7FA /* Assets.xcassets */; };
 		17FB71292A8196C70062D7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FB71272A8196C70062D7FA /* LaunchScreen.storyboard */; };
-		17FB71372A819A580062D7FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71362A819A580062D7FA /* LoginViewController.swift */; };
-		17FB71392A819A6D0062D7FA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71382A819A6D0062D7FA /* RegisterViewController.swift */; };
-		17FB713B2A819A870062D7FA /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB713A2A819A870062D7FA /* PhotoViewerViewController.swift */; };
-		17FB713D2A819A980062D7FA /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB713C2A819A980062D7FA /* VideoPlayerViewController.swift */; };
-		17FB713F2A819AA90062D7FA /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB713E2A819AA90062D7FA /* NewConversationViewController.swift */; };
-		17FB71412A819ABA0062D7FA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71402A819ABA0062D7FA /* ProfileViewController.swift */; };
+		17FB71452A81A5620062D7FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71442A81A5620062D7FA /* LoginViewController.swift */; };
+		17FB71472A81A5710062D7FA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71462A81A5710062D7FA /* RegisterViewController.swift */; };
+		17FB71492A81A5810062D7FA /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71482A81A5810062D7FA /* PhotoViewerViewController.swift */; };
+		17FB714B2A81A58C0062D7FA /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB714A2A81A58C0062D7FA /* VideoPlayerViewController.swift */; };
+		17FB714D2A81A5980062D7FA /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB714C2A81A5980062D7FA /* NewConversationViewController.swift */; };
+		17FB71502A81A9120062D7FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB714F2A81A9120062D7FA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,12 @@
 		17FB71252A8196C70062D7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17FB71282A8196C70062D7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17FB712A2A8196C70062D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17FB71362A819A580062D7FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		17FB71382A819A6D0062D7FA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		17FB713A2A819A870062D7FA /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
-		17FB713C2A819A980062D7FA /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
-		17FB713E2A819AA90062D7FA /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
-		17FB71402A819ABA0062D7FA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		17FB71442A81A5620062D7FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		17FB71462A81A5710062D7FA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		17FB71482A81A5810062D7FA /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		17FB714A2A81A58C0062D7FA /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		17FB714C2A81A5980062D7FA /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		17FB714F2A81A9120062D7FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +81,11 @@
 		17FB71302A8199040062D7FA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				17FB71422A819ADE0062D7FA /* Login-Register */,
 				17FB71202A8196C60062D7FA /* ConversationsViewController.swift */,
-				17FB713A2A819A870062D7FA /* PhotoViewerViewController.swift */,
-				17FB713C2A819A980062D7FA /* VideoPlayerViewController.swift */,
-				17FB713E2A819AA90062D7FA /* NewConversationViewController.swift */,
-				17FB71402A819ABA0062D7FA /* ProfileViewController.swift */,
+				17FB714E2A81A5A20062D7FA /* Login_Register */,
+				17FB71482A81A5810062D7FA /* PhotoViewerViewController.swift */,
+				17FB714A2A81A58C0062D7FA /* VideoPlayerViewController.swift */,
+				17FB714C2A81A5980062D7FA /* NewConversationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 			children = (
 				17FB711C2A8196C60062D7FA /* AppDelegate.swift */,
 				17FB711E2A8196C60062D7FA /* SceneDelegate.swift */,
+				17FB714F2A81A9120062D7FA /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -132,13 +132,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		17FB71422A819ADE0062D7FA /* Login-Register */ = {
+		17FB714E2A81A5A20062D7FA /* Login_Register */ = {
 			isa = PBXGroup;
 			children = (
-				17FB71362A819A580062D7FA /* LoginViewController.swift */,
-				17FB71382A819A6D0062D7FA /* RegisterViewController.swift */,
+				17FB71442A81A5620062D7FA /* LoginViewController.swift */,
+				17FB71462A81A5710062D7FA /* RegisterViewController.swift */,
 			);
-			path = "Login-Register";
+			path = Login_Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,15 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17FB71372A819A580062D7FA /* LoginViewController.swift in Sources */,
-				17FB71392A819A6D0062D7FA /* RegisterViewController.swift in Sources */,
-				17FB713F2A819AA90062D7FA /* NewConversationViewController.swift in Sources */,
-				17FB71412A819ABA0062D7FA /* ProfileViewController.swift in Sources */,
+				17FB71452A81A5620062D7FA /* LoginViewController.swift in Sources */,
+				17FB71502A81A9120062D7FA /* Extensions.swift in Sources */,
+				17FB71472A81A5710062D7FA /* RegisterViewController.swift in Sources */,
+				17FB714D2A81A5980062D7FA /* NewConversationViewController.swift in Sources */,
 				17FB71212A8196C60062D7FA /* ConversationsViewController.swift in Sources */,
-				17FB713D2A819A980062D7FA /* VideoPlayerViewController.swift in Sources */,
+				17FB714B2A81A58C0062D7FA /* VideoPlayerViewController.swift in Sources */,
 				17FB711D2A8196C60062D7FA /* AppDelegate.swift in Sources */,
 				17FB711F2A8196C60062D7FA /* SceneDelegate.swift in Sources */,
-				17FB713B2A819A870062D7FA /* PhotoViewerViewController.swift in Sources */,
+				17FB71492A81A5810062D7FA /* PhotoViewerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
