@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -124,12 +125,24 @@ class LoginViewController: UIViewController {
         passwordField.resignFirstResponder()
         
         // here the commas is validations such as if statements
-        guard let email = emailField.text, let password = passwordField.text, !email.isEmpty, !password.isEmpty, password.count >= 6 else {
-            alertUserLoginError()
-            return
+        guard let email = emailField.text,
+              let password = passwordField.text,
+              !email.isEmpty, !password.isEmpty, password.count >= 6 else {
+                alertUserLoginError()
+                return
         }
         
         // Firebase Login
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Failed to login \(email)")
+                return
+            }
+            
+            let user = result.user
+            print("Logged In User: \(user)")
+            
+        })
     }
     
     // create a alert controller
