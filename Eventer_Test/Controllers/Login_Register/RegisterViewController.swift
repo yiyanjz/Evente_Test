@@ -199,21 +199,36 @@ class RegisterViewController: UIViewController {
         }
         
         // Firebase Login
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {authResult, error in
-            guard let result = authResult, error == nil else {
-                print("Error creating user")
+        // check if email is used
+        DatabaseManager.shared.userExists(with: email, completion: { [weak self] exists in
+            guard let strongSelf = self else { return }
+
+            guard !exists else {
+                //user already exists
+                strongSelf.alertUserLoginError(message: "Email Already Exists")
                 return
             }
-            let user = result.user
-            print("Created User: \(user)")
+            
+            // here [weak self if used to prevent an memory leaked
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+                guard authResult != nil, error == nil else {
+                    print("Error creating user")
+                    return
+                }
+                // add data to database
+                DatabaseManager.shared.insertUser(with: ChatAppUser(firstname: firstName,
+                                                                    lastname: lastName,
+                                                                    emailAddress: email))
+                // dismiss nav controller
+                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+            })
         })
-        
     }
     
     // create a alert controller
-    func alertUserLoginError() {
+    func alertUserLoginError(message: String = "Please enter all information") {
         let alert = UIAlertController(title: "Woops",
-                                      message: "Please enter all information",
+                                      message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
         present(alert, animated: true)

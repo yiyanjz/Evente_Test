@@ -22,6 +22,7 @@
 		17FB71522A81C1200062D7FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17FB71512A81C1200062D7FA /* GoogleService-Info.plist */; };
 		17FB71552A81C1820062D7FA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17FB71542A81C1820062D7FA /* FirebaseAuth */; };
 		17FB71572A81C1820062D7FA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 17FB71562A81C1820062D7FA /* FirebaseDatabase */; };
+		17FB71592A81D21F0062D7FA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB71582A81D21F0062D7FA /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		17FB714C2A81A5980062D7FA /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		17FB714F2A81A9120062D7FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		17FB71512A81C1200062D7FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17FB71582A81D21F0062D7FA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				17FB711C2A8196C60062D7FA /* AppDelegate.swift */,
 				17FB711E2A8196C60062D7FA /* SceneDelegate.swift */,
 				17FB714F2A81A9120062D7FA /* Extensions.swift */,
+				17FB71582A81D21F0062D7FA /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				17FB71452A81A5620062D7FA /* LoginViewController.swift in Sources */,
 				17FB71502A81A9120062D7FA /* Extensions.swift in Sources */,
+				17FB71592A81D21F0062D7FA /* DatabaseManager.swift in Sources */,
 				17FB71472A81A5710062D7FA /* RegisterViewController.swift in Sources */,
 				17FB714D2A81A5980062D7FA /* NewConversationViewController.swift in Sources */,
 				17FB71212A8196C60062D7FA /* ConversationsViewController.swift in Sources */,
